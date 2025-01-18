@@ -1,0 +1,80 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f9c5d1, #fee9e8);
+    color: #333;
+    text-align: center;
+}
+
+.animated-text {
+    font-size: 2.5rem;
+    animation: fadeIn 3s ease-in-out infinite alternate;
+    color: #e63946;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+.intro-message {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.photo-album h2, .love-meter h2, .surprise-messages h2 {
+    color: #6a0572;
+    margin: 20px 0 10px;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #6a0572;
+}
+
+.meter {
+    width: 300px;
+    height: 20px;
+    border: 2px solid #e63946;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.fill {
+    width: 0;
+    height: 100%;
+    background: #e63946;
+    transition: width 1s;
+}
+
+button {
+    background-color: #e63946;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    animation: glow 2s infinite;
+}
+
+button:hover {
+    background-color: #d62839;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 10px #e63946; }
+    50% { box-shadow: 0 0 20px #e63946; }
+    100% { box-shadow: 0 0 10px #e63946; }
+}

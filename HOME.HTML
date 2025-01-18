@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You, My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="landing">
+        <h1 class="animated-text">Welcome, My Love!</h1>
+        <p class="intro-message">This page is made just for you, with all my heart. 💕</p>
+    </div>
+
+    <div class="photo-album">
+        <h2>Our Memories</h2>
+        <div class="gallery">
+            <img src="photo1.jpg" alt="Memory 1">
+            <img src="photo2.jpg" alt="Memory 2">
+            <img src="photo3.jpg" alt="Memory 3">
+        </div>
+    </div>
+
+    <div class="love-meter">
+        <h2>Love Meter</h2>
+        <button onclick="fillLoveMeter()">Fill the Love Meter</button>
+        <div class="meter">
+            <div class="fill"></div>
+        </div>
+    </div>
+
+    <div class="surprise-messages">
+        <h2>Click for a Surprise!</h2>
+        <button onclick="showRandomMessage()">Reveal</button>
+        <p id="random-message"></p>
+    </div>
+
+    <audio controls autoplay loop>
+        <source src="romantic_song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
